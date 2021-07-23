@@ -13,7 +13,7 @@ No installation required. Users will be directed to the GitHub Pages link listed
  
 ## Description
  
- 
+ Dungeons and Dragons has a lot of moving parts in order to be successful. This app will help all members of the adventuring party and the dungeon master stay organized while fighting through questlines. 
  
 ## Contribution
  
