@@ -1,5 +1,5 @@
 {
-  "name": "DnD-Character-Tracker",
+  "name": "dnd-character-tracker",
   "version": "1.0.0",
   "description": "A Dungeons and Dragons party tracker to help Dungeon Masters keep track of players stats, spells, maps, and items.",
   "main": "index.js",
