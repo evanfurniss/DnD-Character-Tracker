@@ -1,0 +1,27 @@
+{
+  "name": "DnD-Character-Tracker",
+  "version": "1.0.0",
+  "description": "A Dungeons and Dragons party tracker to help Dungeon Masters keep track of players stats, spells, maps, and items.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanfurniss/DnD-Character-Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanfurniss/DnD-Character-Tracker/issues"
+  },
+  "homepage": "https://github.com/evanfurniss/DnD-Character-Tracker#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "firebase": "^8.8.1"
+  }
+}
