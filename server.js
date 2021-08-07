@@ -4,7 +4,7 @@ const routes = require("./routes");
 const app = express();
 const firebase = require("firebase/app");
 const admin = require("firebase-admin");
-const serviceAccount = require("path/to/serviceAccountKey.json");
+const serviceAccount = require("./scripts/firebase");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
