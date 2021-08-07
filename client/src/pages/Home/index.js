@@ -1,19 +1,15 @@
 import React from "react";
-import Button from "../../components/Button";
-import Nav from "../../components/Nav"
-
 
 const Home = () => {
     return(
         <>
-            <div>
-                <Nav />
-                <center>
-                    <Button />
-                </center>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-3 text-center">New Campaign</h1>
+                </div>
             </div>
         </>
-    )
-}
+    );
+};
 
 export default Home;
