@@ -1,4 +1,5 @@
 import React from "react";
+import Form from "../../components/Form";
 
 const Home = () => {
     return(
@@ -8,6 +9,7 @@ const Home = () => {
                     <h1 class="display-3 text-center">New Campaign</h1>
                 </div>
             </div>
+            <Form />
         </>
     );
 };
