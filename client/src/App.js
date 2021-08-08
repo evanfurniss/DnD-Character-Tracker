@@ -1,11 +1,11 @@
 import React from "react";
 import "./index.css"
-import Home from "./pages/Home";
+import Campaign from "./pages/Campaign"
 
 function App() {
   return (
     <div className="col-md-8 offset-md-2">
-      <Home />
+      <Campaign />
     </div>
   );
 }
