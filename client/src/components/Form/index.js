@@ -7,7 +7,7 @@ function Form() {
                 <div className="row mb-3">
                     <div className="col-md-8 offset-md-2">
                         <div className="text-center">
-                            <label for="campaignName">Campaign Nickname</label>
+                            <label htmlFor="campaignName">Campaign Nickname</label>
                         </div>
                         <input type="text" className="form-control" id="campaignName" aria-describedby="Campaign Nickname" placeholder="The Best Adventuring Crew"></input>
                     </div>
@@ -15,7 +15,7 @@ function Form() {
                 <div className="row mb-3">
                     <div className="col-md-8 offset-md-2">
                         <div className="text-center">
-                            <label for="numPlayers">Number of Players</label>
+                            <label htmlFor="numPlayers">Number of Players</label>
                         </div>
                         <input type="text" className="form-control" id="numPlayers" aria-describedby="Number of Players" placeholder="3"></input>
                     </div>
@@ -23,7 +23,7 @@ function Form() {
                 <div className="row mb-3">
                     <div className="col-md-8 offset-md-2">
                         <div className="text-center">
-                            <label for="dungeonMaster">Dungeon Master</label>
+                            <label htmlFor="dungeonMaster">Dungeon Master</label>
                         </div>
                         <input type="text" className="form-control" id="dungeonMaster" aria-describedby="Dungeon Master" placeholder="The Wise One"></input>
                     </div>

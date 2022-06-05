@@ -12,9 +12,9 @@ const Campaign = () =>{
 
     return(
         <>
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-3 text-center">New Campaign</h1>
+            <div className="jumbotron jumbotron-fluid">
+                <div className="container">
+                    <h1 className="display-3 text-center">New Campaign</h1>
                 </div>
             </div>
             <Form />

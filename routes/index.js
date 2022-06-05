@@ -1,11 +1,12 @@
-var path = require("path");
-var apiRoutes = require("./api");
-var app = require("express").Router();
+const express = require("express");
+const path = require("path");
+const apiRoutes = require("./api");
+const router = require("express").Router();
 
-app.use("/api", apiRoutes);
+router.use("/api", express.json({limit: '10mb'}), apiRoutes);
 
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+router.use(express.json({limit: '10mb'}), function(req, res) {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
-module.exports = app;
+module.exports = router;

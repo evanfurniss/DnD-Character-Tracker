@@ -1,11 +1,14 @@
-const express = require("express");
 const { initializeApp, cert } = require('firebase-admin/app');
+const express = require("express");
+
 require("dotenv").config();
 
 const serviceAccount = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS);
 
 initializeApp({
-    credential: cert(serviceAccount)
+    credential: cert(serviceAccount),
+    databaseURL: process.env.DATABASE_URL,
+    storageBucket: process.env.STORAGE_BUCKET
 });
 
 const routes = require("./routes");
@@ -28,7 +31,17 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Serve up static assets
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static('client/build'));
+    app.use(express.static('client/build',{
+        etag: true,
+        lastModified: true,
+        setHeaders: (res, path) => {
+            if (path.endsWith('.html')) {
+                res.setHeader('Cache-Control', 'no-cache');
+            } else if (path.endsWith('.jpg')) {
+                res.setHeader('Cache-Control', 'max-age=31536000');
+            };
+        }
+    }));
 };
 
 // Add routes, both API and view
