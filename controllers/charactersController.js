@@ -4,7 +4,7 @@ const db = getFirestore();
 const charactersRef = db.collection("characters");
 
 module.exports = {
-    addCharacter: function(req, res) {
+    addCharacter: async function(req, res) {
         try {
             const doc = await charactersRef.add(req.body);
 
@@ -19,7 +19,7 @@ module.exports = {
         };
     },
 
-    getCharacters: function(req, res) {
+    getCharacters: async function(req, res) {
         try {
             const doc = await charactersRef.get();
 
